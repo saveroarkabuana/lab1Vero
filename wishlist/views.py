@@ -24,6 +24,7 @@ def show_wishlist(request):
     context = {
     'list_barang': data_barang_wishlist,
     'nama': 'Vero',
+    'npm' : '2106635985',
     'last_login': request.COOKIES['last_login'],
     }
     return render(request, "wishlist.html", context)
